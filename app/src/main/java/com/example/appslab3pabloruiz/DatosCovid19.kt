@@ -4,10 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.appslab3pabloruiz.databinding.ActivityDatosCovid19Binding
-import kotlinx.android.synthetic.main.activity_datos_covid19.*
 /**
  * <h1>DatosCovid19</h1>
  *<p>
@@ -23,14 +21,18 @@ class DatosCovid19 : AppCompatActivity() {
     // Uses databinding
     private lateinit var binding: ActivityDatosCovid19Binding
     private val selectedAttribute: CovidDataClass = CovidDataClass()
-    
+
     /**
-     * Builds the app initialization
+     * Builds the app initialization displays the information requested
      * @param savedInstanceState saved App data
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Gets which button was pressed
         val selectedInformation = intent.getStringExtra("buttonPressed")
+
+        // Sets elements of selectedAttributes according to the user request
         when(selectedInformation) {
             "virus" -> {
                 selectedAttribute.title = "Virus Covid-19"
@@ -86,7 +88,6 @@ class DatosCovid19 : AppCompatActivity() {
                         "la enfermedad han muerto. Las personas que tengan fiebre, tos y dificultad" +
                         " para respirar deben buscar atención médica.\n\n"
             }
-
             "indications" -> {
                 selectedAttribute.title = "Indicaciones para el Covid-19"
                 selectedAttribute.subtitle = "\n\nMedidas a tomar para protegerse del virus\n\n"
@@ -195,17 +196,21 @@ class DatosCovid19 : AppCompatActivity() {
                         "de salud le dirija rápidamente hacia el centro de salud adecuado. Esto " +
                         "ayudará también a prevenir la propagación de virus y otras infecciones.\n\n"
             }
-
         }
 
+        // Data binding content applied to the activity
         binding = DataBindingUtil.setContentView(this, R.layout.activity_datos_covid19)
-        binding.selectedAttribute = selectedAttribute
-        binding.publishButton.setOnClickListener{publishButton(it)}
+        binding.selectedAttribute = selectedAttribute   // Updates the variable to show
+        binding.publishButton.setOnClickListener{publishButton(it)}     // To pubish a comment
         binding. apply {
             invalidateAll()
         }
     }
 
+    /**
+     * Initializes main activity and sends the comment to it
+     * @param view
+     */
     private fun publishButton(view: View?) {
         val mainActivity = Intent(this, MainActivity::class.java)
         mainActivity.putExtra("comment", binding.comment.text.toString())
