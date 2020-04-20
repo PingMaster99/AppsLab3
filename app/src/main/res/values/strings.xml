@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">AppsLab3PabloRuiz</string>
+    <string name="coronavirus">Covid19</string>
+    <string name="risk">Show risk</string>
+    <string name="name">Nombre</string>
+    <string name="edad">Edad</string>
+    <string name="virus">Virus</string>
+    <string name="symptoms">Sintomas</string>
+    <string name="indications">Indicaciones</string>
+    <string name="generalInfo">
+        Los coronavirus son una extensa familia de virus que pueden causar enfermedades tanto en
+    animales como en humanos. En los humanos, se sabe que varios coronavirus causan infecciones
+    respiratorias que pueden ir desde el resfriado común hasta enfermedades más graves como el
+    síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS).
+    El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus
+    COVID-19. \n \n
+
+        Por lo general, los síntomas de la COVID-19 son leves, sobre todo en los niños y los adultos
+    jóvenes. No obstante, también pueden ser graves y obligan a hospitalizar a alrededor de uno de
+    cada cinco infectados. Por consiguiente, es bastante normal preocuparse por los efectos que el
+    brote de COVID-19 puede tener en nosotros y en nuestros seres queridos. \n \n
+
+        Esta preocupación debe servirnos para adoptar medidas de protección para nosotros, nuestros
+    seres queridos y las comunidades donde vivimos. La medida principal y más importante es la
+    higiene regular y completa de las manos y de las vías respiratorias. En segundo lugar, es
+    importante mantenerse informado y seguir los consejos de las autoridades sanitarias locales,
+    como los relativos a los viajes, los desplazamientos y los eventos donde se pueda concentrar
+    un gran número de personas.
+    </string>
+
+    <string name="publish">Publicar</string>
+    <string name="comment">Ingrese su comentario aquí</string>
+    <string name="commentSubtitle">Comentar</string>
+</resources>
