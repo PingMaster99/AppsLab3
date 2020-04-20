@@ -86,7 +86,7 @@ class DatosCovid19 : AppCompatActivity() {
                         " problemas cardiacos o diabetes, tienen más probabilidades de desarrollar" +
                         " una enfermedad grave. En torno al 2% de las personas que han contraído " +
                         "la enfermedad han muerto. Las personas que tengan fiebre, tos y dificultad" +
-                        " para respirar deben buscar atención médica.\n\n"
+                        " para respirar deben buscar atención médica (OMS, 2020).\n\n"
             }
             "indications" -> {
                 selectedAttribute.title = "Indicaciones para el Covid-19"
@@ -194,7 +194,7 @@ class DatosCovid19 : AppCompatActivity() {
                         "\n" +
                         "¿Por qué? Llamar con antelación permitirá que su dispensador de atención " +
                         "de salud le dirija rápidamente hacia el centro de salud adecuado. Esto " +
-                        "ayudará también a prevenir la propagación de virus y otras infecciones.\n\n"
+                        "ayudará también a prevenir la propagación de virus y otras infecciones (OMS, 2020).\n\n"
             }
         }
 
